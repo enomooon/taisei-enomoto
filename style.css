@@ -1,38 +1,33 @@
 @media screen and (max-width: 600px) {
-    html { 
-        font-size:62.5%
-    }
+    html { font-size:62.5% }
 }
-
 @media screen and (min-width: 600px) {
-    html { 
-        font-size: 75%
-    }
+    html { font-size: 75% }
 }
-
 @media screen and (min-width: 960px) {
-    html { 
-        font-size: 88%
-    }
+    html { font-size: 88% }
 }
-
 
 header {
     position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
-    height: 4vh;
+    height: 5vh;
     width: 100vw;
     background: #eee;
     box-sizing: border-box;
 }
 
-.logo {
+header .logo {
+    font-family: Tahoma;
     padding-left: 1vw;
-    padding-top: 1vh;
-    margin: 0;
+    padding-top: 0vh;
+    line-height: 5vh;
+    height: 5vh;
     font-size: 2vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 
@@ -41,8 +36,55 @@ body {
     color:#000;
     background-color:#fff;
     margin: 0;
-    padding-top: 4vh;
+    padding-top: 5vh
 }
+
+.headline {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFFF;
+}
+
+.headline img{
+    width: 100%;
+    opacity: 0.6;
+    display: block;
+}
+
+.headline .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    display:block;
+    white-space: nowrap;
+}
+
+.headline .text h1{
+    position: relative;
+    font-size: 4.0vw;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis; 
+    max-width: 100vw;
+}
+
+.headline .text h3 {
+    position: relative;
+    font-size: 2.0vw;
+    font-weight: lighter;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis; 
+    max-width: 100vw;
+}
+
 
 .profile {
     padding-left: 15vw; 
@@ -53,205 +95,49 @@ body {
 
 .profile .message {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     display: inline-block;
     font-weight: lighter;
-}
-
-.headline {
-    position: relative;
-    text-align: center;
-}
-
-.headline img{
-    width: 100%;
-    opacity: 0.6;
-}
-
-.headline .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    display:block;
-}
-
-.headline .text h1{
-    position: relative;
-    font-size: 4.0vw;
-    display: block;
-    
-}
-.headline .text h3 {
-    position: relative;
-    font-size: 2.0vw;
-    font-weight: lighter;
-    display: block;
 }
 
 .sub-content {
     padding-left: 15vw;
     padding-right: 15vw;
-    margin-bottom: 3.0rem;
+    margin-bottom: 4.0rem;
 }
 
 .sub-content li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .sub-content .sub-title {
     color: black;
     font-weight: bold;
     font-size: 2.2rem;
+    line-height: 3rem;
     text-shadow:0.07rem 0.07rem 0.15rem gray;
 }
 
 .sub-content .sub-text {
     font-size: 1.5rem;
-    font-size: 1.5rem;
 }
 
+.sub-content .sub-text .sub-sub-text {
+    font-size: 1.2rem;
+}
 
 .footer {
     text-align: center;
+    font-size: 1.1rem;
 }
-
 
 .out-link {
     text-align: center;
     margin-bottom: 3.0rem;
     opacity: 0;
-    transition: all 5s ease;
+    transition: all 6s ease;
 }
 
 .out-link img {
     width: 5.0rem;
 }
-
-
-
-
-
-
-
-
-/*
-@media screen and (min-width: 1px) {
-    header {
-        position: fixed;
-        z-index: 99;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 4vh;
-        background: #eee;
-        box-sizing: border-box;
-    }
-
-    .logo {
-        padding-left: 1vw;
-        padding-top: 1vh;
-        margin: 0;
-        font-size: 2vh;
-    }
-
-    
-    body {
-        font-family: Franklin Gothic;
-        color:#000;
-        background-color:#fff;
-        margin: 0;
-        padding-top: 4vh;
-    }
-
-    .profile {
-        padding-left: 15vw; 
-        padding-right: 15vw; 
-        text-align: center;
-        display: block;
-    }
-
-    .profile .message {
-        text-align: left;
-        font-size: 20px;
-        display: inline-block;
-        font-weight: lighter;
-    }
-
-    .headline {
-        position: relative;
-        text-align: center;
-    }
-
-    .headline img{
-        width: 100%;
-        opacity: 0.6;
-    }
-
-    .headline .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        display:block;
-    }
-
-    .headline .text h1{
-        position: relative;
-        font-size: 4.0vw;
-        display: block;
-        
-    }
-    .headline .text h3 {
-        position: relative;
-        font-size: 2.0vw;
-        font-weight: lighter;
-        display: block;
-    }
-
-    .sub-content {
-        padding-left: 15vw;
-        padding-right: 15vw;
-        margin-bottom: 5vh;
-    }
-
-    .sub-content li {
-        margin-bottom: 15px;
-    }
-
-    .sub-content .sub-title {
-        font-size: 30px;
-        color: black;
-        font-weight: bold;
-        text-shadow:1px 1px 3px gray;
-    }
-
-    .sub-content .sub-text {
-        font-size: 20px;
-    }
-    .sub-content .sub-text .element {
-        margin-bottom: 15px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .bottom_space {
-        margin-bottom: 15px;
-    }
-
-    .out-link {
-        text-align: center;
-        margin-bottom: 5vh;
-    }
-
-    .out-link img {
-        width: 80px;
-    }
-}
-
-
- */
