@@ -18,6 +18,17 @@ headline.addEventListener('mouseleave', () => {
     });
 })();
 
+sns_names = ["twitter", "github"];
+for (const sns_name of sns_names) {
+    let sns = document.getElementById(sns_name);
+    sns.addEventListener('mouseenter', () => {
+        sns.style.opacity = 0.6;
+    }, false); 
+    sns.addEventListener('mouseleave', () => {
+        sns.style.opacity = 1;
+    }, false);
+}
+
 // let sub_title = document.getElementsByClassName('sub-title');
 // const sub_title_array = Array.prototype.slice.call(sub_title);
 // sub_title_array.forEach(function(item) {
