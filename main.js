@@ -12,11 +12,14 @@ headline.addEventListener('mouseleave', () => {
     headline.style.backgroundColor = "#FFFFFF";
 }, false);
 
-(window.onload = function() {
-    out_link_array.forEach(function(item) {
-        item.style.opacity =  1;
-    });
-})();
+// (window.onload = function() {
+//     out_link_array.forEach(function(item) {
+//         item.style.opacity =  1;
+//     });
+// })();
+out_link_array.forEach(function(item) {
+    item.style.opacity =  1;
+});
 
 sns_names = ["twitter", "github"];
 for (const sns_name of sns_names) {
