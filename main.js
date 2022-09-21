@@ -22,15 +22,18 @@ out_link_array.forEach(function(item) {
 });
 
 sns_names = ["twitter", "github"];
-for (const sns_name of sns_names) {
-    let sns = document.getElementById(sns_name);
+sns_colors = ["#00ACED", "#000000"]
+for (let i = 0; i < sns_names.length; i++) {
+    let sns = document.getElementById(sns_names[i]);
     sns.addEventListener('mouseenter', () => {
-        sns.style.opacity = 0.6;
+        //sns.style.opacity = 0.6;
+        sns.style.backgroundColor = sns_colors[i];
     }, false); 
     sns.addEventListener('mouseleave', () => {
-        sns.style.opacity = 1;
+        sns.style.backgroundColor = "#808080";
     }, false);
 }
+
 
 // let sub_title = document.getElementsByClassName('sub-title');
 // const sub_title_array = Array.prototype.slice.call(sub_title);
