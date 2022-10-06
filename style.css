@@ -50,6 +50,7 @@ body {
     width: 100vw;
     opacity: 0.6;
     display: block;
+    overflow: hidden;
 }
 
 .headline .text {
